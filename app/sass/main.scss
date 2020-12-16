@@ -1,0 +1,232 @@
+// font-family: 'Montserrat', sans-serif;
+
+@import "./header/header"; // all styles for header block
+@import "./footer/footer"; // all styles for footer block
+
+// @font-face {
+//     font-family: 'Material Icons';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+//     src: local('Material Icons'),
+//       local('MaterialIcons-Regular'),
+//       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+//       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+//       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+// }
+
+// global styles
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #424242;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.25;
+}
+
+.body-decor {
+    opacity: 0.5;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url(../img/body-bg.jpg);
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+a {
+    color: #832800;
+
+    &:hover {
+        color: #832800;
+    }
+}
+
+/* Rules for sizing the icon. */
+.material-icons.is-18 { font-size: 18px; }
+.material-icons.is-24 { font-size: 24px; }
+.material-icons.is-36 { font-size: 36px; }
+.material-icons.is-48 { font-size: 48px; }
+
+
+.relative { position: relative; }
+
+
+@media only screen and (min-width: 1200px) {}
+
+// blocks styles
+
+
+.main {
+    display: flex;
+    padding: 30px 0;
+
+    // .container {
+    //     background-color: #fff;
+    //     margin-top: 30px;
+    //     padding: 30px;
+    // }
+}
+
+.section {
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.article {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+
+    & + .article {
+        margin-top: 40px;
+    }
+
+    &__title {
+        background-color: #ede7d8;
+        border-bottom: solid 1px #832800;
+        color: #832800;
+        padding: 4px 10px 0;
+
+        h2 {
+            display: inline-block;
+            background-color: #fff;
+            border-style: solid;
+            border-width: 1px 1px 0 1px;
+            border-color: #832800;
+            border-radius: 4px 4px 0 0;
+            margin-bottom: -1px;
+            padding: 0 14px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 2;
+        }
+    }
+
+    &__content {
+        padding: 35px 25px 20px;
+    }
+}
+
+.tab {
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        background-color: #ede7d8;
+        border-bottom: solid 1px #832800;
+        color: #832800;
+        padding: 4px 10px 0;
+
+        &-item {
+            opacity: 0.7;
+            background-color: #fff;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #832800;
+            border-radius: 4px 4px 0 0;
+            margin-bottom: -1px;
+            padding: 0 14px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.9;
+            cursor: pointer;
+
+            & + * {
+                margin-left: 4px;
+            }
+
+            &:hover {
+                opacity: 1;
+                line-height: 2.3;
+            }
+
+            &.st-active {
+                opacity: 1;
+                border-bottom-color: #fff;
+                line-height: 2.3;
+                cursor: default;
+            }
+        }
+    }
+
+    &__content {
+        padding: 35px 25px 20px;
+    }
+}
+
+.aside {
+    min-width: 240px;
+    margin-left: 30px;
+}
+
+.m-btn {
+    display: inline-flex;
+
+    background-color: #fff;
+    border: solid 1px #ede7d8;
+    border-radius: .25rem;
+    color: #832800;
+    padding: .3rem .75rem;
+
+    line-height: 1.8;
+    text-align: center;
+    vertical-align: middle;
+
+    cursor: pointer;
+
+    &:hover {
+        border-color: #832800;
+        color: #832800;
+        text-decoration: none;
+    }
+
+    .material-icons { margin: 1px .5rem 0 -0.1rem; }
+
+    &-link {
+        border: solid 1px #ede7d8;
+        border-radius: 3px;
+        padding: .25rem .5rem;
+        line-height: 1.25;
+
+        .material-icons { margin-left: 0; }
+    }
+}
+
+.atention {
+    display: flex;
+    background-color: #fffdf6;
+    border: solid 1px #832800;
+    border-radius: .3rem;
+    padding: 14px 16px;
+
+    p { margin: 0; }
+
+    .material-icons { margin-right: 10px; }
+}
+
+.rgb-blue {
+    color: #2a6ce6;
+}

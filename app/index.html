@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршрутка UA - Общественный, коммунальный и городской транспорт Украины</title>
+
+    <link rel="stylesheet" href="libs/bootstrap-reboot/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="relative">
+    <div class="body-decor"></div>
+    <header class="header relative">
+
+<!-- Start Search Panel -->
+        <div class="header__search-panel">
+            <div class="container">
+                <div class="search-panel__wrap">
+
+                    <div class="select-wrap">
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrap">
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+
+                    <input class="input-field" placeholder="Введите улицу, объект или номер транспорта" />
+
+                    <button class="btn-search">Найти</button>
+
+                    <a><i class="material-icons btn-icon">zoom_out_map</i></a>
+
+                </div>
+            </div>
+        </div>
+<!-- End Search Panel -->
+
+        <div class="header__navigation">
+            <div class="container">
+
+<!-- Start Navigation Menu -->
+
+                <div class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu-home"><a href="" class="nav__menu-home-link"><i class="material-icons is-36">home</i></a></li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">directions_bus</i>Транспорт</a>
+                            <ul class="nav__dmenu">
+                                <li class="nav__dmenu-item"><a href="/transport/" class="nav__dmenu-item-link">Городской транспорт</a></li>
+                                <li class="nav__dmenu-item"><a href="/owner/" class="nav__dmenu-item-link">Перевозчики</a></li>
+                                <li class="nav__dmenu-item"><a href="/region/" class="nav__dmenu-item-link">Области</a></li>
+                                <li class="nav__dmenu-item"><a href="/update/" class="nav__dmenu-item-link">Последние обновления</a></li>
+                                <li class="nav__dmenu-item"><a href="/route/" class="nav__dmenu-item-link">Добавить маршрут</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">local_taxi</i>Такси</a>
+                        </li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">toc</i>Новости</a>
+                        </li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">face</i>О нас</a>
+                            <ul class="nav__dmenu">
+                                <li class="nav__dmenu-item"><a href="/feedback/" class="nav__dmenu-item-link">Контакты</a></li>
+                                <li class="nav__dmenu-item"><a href="/ad/" class="nav__dmenu-item-link">Реклама</a></li>
+                                <li class="nav__dmenu-item"><a href="/button/" class="nav__dmenu-item-link">Кнопки</a></li>
+                                <li class="nav__dmenu-item"><a href="/achievement/" class="nav__dmenu-item-link">Достижения</a></li>
+                                <li class="nav__dmenu-item"><a href="/donate/" class="nav__dmenu-item-link">Пожертвование</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">groups</i>Общение</a>
+                            <ul class="nav__dmenu">
+                                <li class="nav__dmenu-item"><a href="/?http://forum.marshrutka.com.ua/" target="_blank" class="nav__dmenu-item-link">Форум</a></li>
+                                <li class="nav__dmenu-item"><a href="/?http://faq.marshrutka.com.ua" target="_blank" class="nav__dmenu-item-link">Вопросы и ответы</a></li>
+                                <li class="nav__dmenu-item"><a href="/?http://chat.marshrutka.com.ua" target="_blank" class="nav__dmenu-item-link">Мини чат</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu-separate"></li>
+                        <li class="nav__menu-item">
+                            <a href="" class="nav__menu-item-link"><i class="material-icons">business_center</i>Партнеры</a>
+                            <ul class="nav__dmenu">
+                                <li class="nav__dmenu-item"><a href="/story/yellow/" class="nav__dmenu-item-link">Истории о транспорте</a></li>
+                                <li class="nav__dmenu-item"><a href="/?http://auto.marshrutka.com.ua" target="_blank" class="nav__dmenu-item-link">Автобазар</a></li>
+                                <li class="nav__dmenu-item"><a href="/?http://dom.marshrutka.com.ua" target="_blank" class="nav__dmenu-item-link">Недвижимость</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="nav">
+                    <div class="nav__home">
+                        <a class="home-link" href="#"><i class="material-icons is-36">home</i></a>
+                    </div>
+                    <ul class="nav__menu nav-menu _dropdown-show _icons-off">
+                        <li class="nav-menu__item menu-item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">directions_bus</i>Транспорт</a>
+                            <ul class="menu-item__dropdown drop-menu">
+                                <li class="drop-menu__item"><a href="/transport/">Городской транспорт</a></li>
+                                <li class="drop-menu__item"><a href="/owner/">Перевозчики</a></li>
+                                <li class="drop-menu__item"><a href="/region/">Области</a></li>
+                                <li class="drop-menu__item"><a href="/update/">Последние обновления</a></li>
+                                <li class="drop-menu__item"><a href="/route/">Добавить маршрут</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">local_taxi</i>Такси</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">toc</i>Новости</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">face</i>О нас</a>
+                            <ul class="menu-item__dropdown drop-menu">
+                                <li><a href="/feedback/">Контакты</a></li>
+                                <li><a href="/ad/">Реклама</a></li>
+                                <li><a href="/button/">Кнопки</a></li>
+                                <li><a href="/achievement/">Достижения</a></li>
+                                <li><a href="/donate/">Пожертвование</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">groups</i>Общение</a>
+                            <ul class="menu-item__dropdown drop-menu">
+                                <li class="drop-menu__item"><a href="/?http://forum.marshrutka.com.ua/" target="_blank">Форум</a></li>
+                                <li class="drop-menu__item"><a href="/?http://faq.marshrutka.com.ua" target="_blank">Вопросы и ответы</a></li>
+                                <li class="drop-menu__item"><a href="/?http://chat.marshrutka.com.ua" target="_blank">Мини чат</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="menu-item__wrap" href="#"><i class="material-icons">business_center</i>Партнеры</a>
+                            <ul class="menu-item__dropdown drop-menu">
+                                <li><a href="/story/yellow/">Истории о транспорте</a></li>
+                                <li><a href="/?http://auto.marshrutka.com.ua" target="_blank">Автобазар</a></li>
+                                <li><a href="/?http://dom.marshrutka.com.ua" target="_blank">Недвижимость</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> -->
+
+<!-- End Navifation Menu -->
+
+            </div>
+        </div>
+        <div class="header__title">
+            <div class="header__title_decor"></div>
+            <div class="container">
+                <div class="header__title-wrap">
+                    <img src="./img/marshrutka.png" alt="Маршрутка UA. Общественный, коммунальный и городской транспорт Украины">
+                    <div>
+                        <h1>Маршрутка UA</h1>
+                        <h2>Общественный, коммунальный и городской транспорт Украины</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Start Advertising block -->
+
+        <div class="header__advertising">
+            <div class="header__advertising-decor"></div>
+            <div class="container relative">
+                <div class="header__advertising-wrap">
+                    <div class="block-c4e745-l">
+                        <div><a target="_blank" href="http://domacc.com.ua/">качели для дачи</a></div>
+                        <div class="text-c4e745-l"></div>
+                        <div class="host">domacc.com.ua</div>
+                    </div>
+                    <div class="block-c4e745-l">
+                        <div><a target="_blank" href="https://autosos.ua/">autosos.ua</a></div>
+                        <div class="text-c4e745-l">Эвакуатор в Киеве autosos.ua  </div>
+                        <div class="host">autosos.ua</div>
+                    </div>
+                    <div class="block-c4e745-l">
+                        <div><a target="_blank" href="https://happy-car.kiev.ua/polirovka-avtomobilya">полировка авто цены</a></div>
+                        <div class="text-c4e745-l">полировка автомобиля полировка авто цены в детейлинг центре Happy</div>
+                        <div class="host">happy-car.kiev.ua</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- End Advertising block -->
+
+    </header>
+    <main class="main relative">
+        <div class="container">
+            <section class="section">
+                <div class="content">
+                    <article class="article">
+                        <div class="article__title">
+                            <h2>Добро пожаловать на Маршрутку</h2>
+                        </div>
+                        <div class="article__content">
+    
+                            <h4>Мы поможем Вам добраться из одной точки города в другую всеми доступными видами городского транспорта.</h4>
+    
+                            <h4>Вы также можете выбрать самое удобное для Вас такси в Вашем городе.</h4>
+    
+                            <p>Маршрутное такси (в просторечии «маршрутка» и др.) — автобусные маршруты, а также — маршруты микроавтобусов, осуществляющие перевозку пассажиров и багажа по установленным маршрутам регулярных перевозок с посадкой и высадкой пассажиров в любом, не запрещённом правилами дорожного движения, месте. Под данным режимом работы автобусов и микроавтобусов подразумеваются особые преимущества, в отличие от «обычного» автобуса. Например, остановки вне установленных остановочных пунктов. Как правило, более высокая стоимость проезда, не действуют льготы на проезд. © Wikipedia® </p>
+    
+                            <p>Справочная информация по линиям городского и маршрутного транспорта. Расписание движения городского и маршрутного транспорта. Самая свежая и точная информация в удобном для Вас виде. Поиск по улице, объекту, номеру транспорта. Службы такси в городах. Фирмы-перевозчики в городах. Форум о транспорте. Вопросы и ответы по транспорту. Мини-чат по вопросам "как проехать" и другие.</p>
+    
+                            <p>Общайтесь <a class="m-btn m-btn-link" href="#"><i class="material-icons is-18">link</i>Мини чат</a> в онлайне, посетите <a class="m-btn m-btn-link" href="#"><i class="material-icons is-18">link</i>Форум</a> или задавайте <a class="m-btn m-btn-link" href="#"><i class="material-icons is-18">link</i>Вопросы и Ответы</a></p>
+     
+                        </div>
+                    </article>
+
+                    <article class="article article__tabs">
+                        <ul class="tab__list">
+                            <li class="tab__list-item st-active">Поиск улицы / Объекта / Номера</li>
+                            <li class="tab__list-item">Поиск от / до улицы</li>
+                            <li class="tab__list-item">Поиск маршрута</li>
+                        </ul>
+
+                        <div class="tab__content">
+                            <form>
+                                <div class="form-group row">
+                                  <label class="col-sm-3 col-form-label">Город:</label>
+                                  <div class="col-sm-6">
+                                    <select id="inputState" class="form-control">
+                                        <option selected="">Выберите город...</option>
+                                        <option>...</option>
+                                      </select>
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label class="col-sm-3 col-form-label">Улица / объект / номер:</label>
+                                  <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="Введите название улицы / объекта / номер">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <div class="col-sm-3 col-form-label"></div>
+                                  <div class="col-sm-9">
+                                    <button type="button" class="m-btn"><i class="material-icons">search</i>Найти!</button>
+                                  </div>
+                                </div>
+                              </form>
+
+                            <div class="atention">
+                                <i class="material-icons rgb-blue">announcement</i>
+                                <p>Обратите внимание! Название улиц и объектов в разных городах написано либо на русском, либо на украинском языке. Поэтому, если Вы не нашли маршрут, проходящий через интересующий Вас объект, попробуйте повторить поиск на другом языке. Рекомендуем вам также при поиске вводить не полное слово, а несколько первых букв, что увеличит Ваши шансы на то, чтобы поиск стал успешным.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article article__tabs">
+                        <ul class="tab__list">
+                            <li class="tab__list-item st-active">Транспорт</li>
+                            <li class="tab__list-item">Такси</li>
+                            <li class="tab__list-item">Перевозчики</li>
+                            <li class="tab__list-item">Области</li>
+                        </ul>
+
+                        <div class="tab__content">
+                            <div>
+                                <a href="/city/avdeevka/">Авдеевка</a>
+                                ,         <a href="/city/alushta/">Алушта</a>
+                                ,         <a href="/city/antratsyt/">Антрацит</a>
+                                ,         <a href="/city/artemovsk/">Бахмут (Артёмовск)</a>
+                                ,         <a href="/city/belayatserkov/">Белая Церковь</a>
+                                ,         <a href="/city/boyarka/">Боярка</a>
+                                ,         <a href="/city/varash/">Вараш (Кузнецовск)</a>
+                                ,         <a href="/city/vinnitsa/">Винница</a>
+                                ,         <a href="/city/volniansk/">Вольнянск</a>
+                                ,         <a href="/city/vyshgorod/">Вышгород</a>
+                                ,         <a href="/city/gorlovka/">Горловка</a>
+                                ,         <a href="/city/dnepr/">Днепр (Днепропетровск)</a>
+                                ,         <a href="/city/donetsk/">Донецк</a>
+                                ,         <a href="/city/drogobych/">Дрогобыч</a>
+                                ,         <a href="/city/evpatoriya/">Евпатория</a>
+                                ,         <a href="/city/zhytomir/">Житомир</a>
+                                ,         <a href="/city/zaporozhye/">Запорожье</a>
+                                ,         <a href="/city/ivanofrankovsk/">Ивано-Франковск</a>
+                                ,         <a href="/city/irpen/">Ирпень</a>
+                                ,         <a href="/city/kamenets/">Каменец-Подольский</a>
+                                ,         <a href="/city/dneprodzerzhynsk/">Каменское (Днепродзержинск)</a>
+                                ,         <a href="/city/kerch/">Керчь</a>
+                                ,         <a href="/city/kiev/"><b>Киев</b></a>
+                                ,         <a href="/city/komsomolsk/">Комсомольск</a>
+                                ,         <a href="/city/korosten/">Коростень</a>
+                                ,         <a href="/city/kramatorsk/">Краматорск</a>
+                                ,         <a href="/city/kremenchug/">Кременчуг</a>
+                                ,         <a href="/city/krivoyrog/">Кривой Рог</a>
+                                ,         <a href="/city/kirovograd/">Кропивницкий (Кировоград)</a>
+                                ,         <a href="/city/lisichansk/">Лисичанск</a>
+                                ,         <a href="/city/lubny/">Лубны</a>
+                                ,         <a href="/city/lugansk/">Луганск</a>
+                                ,         <a href="/city/lutsk/">Луцк</a>
+                                ,         <a href="/city/lvov/">Львов</a>
+                                ,         <a href="/city/mariupol/">Мариуполь</a>
+                                ,         <a href="/city/nikolaev/">Николаев</a>
+                                ,         <a href="/city/odessa/"><b>Одесса</b></a>
+                                ,         <a href="/city/ochakov/">Очаков</a>
+                                ,         <a href="/city/pavlograd/">Павлоград</a>
+                                ,         <a href="/city/poltava/">Полтава</a>
+                                ,         <a href="/city/rovno/">Ровно</a>
+                                ,         <a href="/city/sevastopol/">Севастополь</a>
+                                ,         <a href="/city/severodonetsk/">Северодонецк</a>
+                                ,         <a href="/city/simferopol/">Симферополь</a>
+                                ,         <a href="/city/smela/">Смела</a>
+                                ,         <a href="/city/sumy/">Сумы</a>
+                                ,         <a href="/city/ternopol/">Тернополь</a>
+                                ,         <a href="/city/uman/">Умань</a>
+                                ,         <a href="/city/kharkov/">Харьков</a>
+                                ,         <a href="/city/kherson/">Херсон</a>
+                                ,         <a href="/city/khmelnitskiy/">Хмельницкий</a>
+                                ,         <a href="/city/cherkassy/">Черкассы</a>
+                                ,         <a href="/city/chernigov/">Чернигов</a>
+                                ,         <a href="/city/chernovtsy/">Черновцы</a>
+                                ,         <a href="/city/shepetovka/">Шепетовка</a>
+                                ,         <a href="/city/yalta/">Ялта</a>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <aside class="aside"><img src="img/baner.jpg"></aside>
+            </section>
+        </div>
+    </main>
+    <footer class="footer relative">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__nav-home"><a class="home-link" href="#"><i class="material-icons is-36">home</i></a></div>
+                <div class="footer__menu">
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">Транспорт</a>
+                        <div class="footer__sub-menu">
+                            <a href="/transport/" class="footer__sub-menu-link">Городской транспорт</a>
+                            <a href="/owner/" class="footer__sub-menu-link">Перевозчики</a>
+                            <a href="/region/" class="footer__sub-menu-link">Области</a>
+                            <a href="/update/" class="footer__sub-menu-link">Последние обновления</a>
+                            <a href="/route/" class="footer__sub-menu-link">Добавить маршрут</a>
+                        </div>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">Такси</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">Новости</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">О нас</a>
+                        <div class="footer__sub-menu">
+                            <a href="/feedback/" class="footer__sub-menu-link">Контакты</a>
+                            <a href="/ad/" class="footer__sub-menu-link">Реклама</a>
+                            <a href="/button/" class="footer__sub-menu-link">Кнопки</a>
+                            <a href="/achievement/" class="footer__sub-menu-link">Достижения</a>
+                            <a href="/donate/" class="footer__sub-menu-link">Пожертвование</a>
+                        </div>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">Общение</a>
+                        <div class="footer__sub-menu">
+                            <a href="/?http://forum.marshrutka.com.ua/" class="footer__sub-menu-link" target="_blank">Форум</a>
+                            <a href="/?http://faq.marshrutka.com.ua" class="footer__sub-menu-link" target="_blank">Вопросы и ответы</a>
+                            <a href="/?http://chat.marshrutka.com.ua" class="footer__sub-menu-link" target="_blank">Мини чат</a>
+                        </div>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#">Партнеры</a>
+                        <div class="footer__sub-menu">
+                            <a href="/story/yellow/" class="footer__sub-menu-link">Истории о транспорте</a>
+                            <a href="/?http://auto.marshrutka.com.ua" class="footer__sub-menu-link" target="_blank">Автобазар</a>
+                            <a href="/?http://dom.marshrutka.com.ua" class="footer__sub-menu-link" target="_blank">Недвижимость</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__text">
+                <p> У нас 56 городов, содержащие 2593 маршрутов транспорта , 0 перезозчиков, 121 такси.
+                    Facebook developed by UleyTech</p>
+                    
+                <p>Copyright ©2006-2020 Маршрутка UA</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<!-- <div class="nav">
+    <div class="nav__home">
+        <a class="home-link" href="#"><i class="material-icons is-36">home</i></a>
+    </div>
+    <ul class="nav__menu nav-menu _dropdown-show _icons-off">
+        <li class="nav-menu__item menu-item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">directions_bus</i>Транспорт</a>
+            <ul class="menu-item__dropdown drop-menu">
+                <li class="drop-menu__item"><a href="/transport/">Городской транспорт</a></li>
+                <li class="drop-menu__item"><a href="/owner/">Перевозчики</a></li>
+                <li class="drop-menu__item"><a href="/region/">Области</a></li>
+                <li class="drop-menu__item"><a href="/update/">Последние обновления</a></li>
+                <li class="drop-menu__item"><a href="/route/">Добавить маршрут</a></li>
+            </ul>
+        </li>
+        <li class="nav-menu__item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">local_taxi</i>Такси</a>
+        </li>
+        <li class="nav-menu__item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">toc</i>Новости</a>
+        </li>
+        <li class="nav-menu__item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">face</i>О нас</a>
+            <ul class="menu-item__dropdown drop-menu">
+                <li><a href="/feedback/">Контакты</a></li>
+                <li><a href="/ad/">Реклама</a></li>
+                <li><a href="/button/">Кнопки</a></li>
+                <li><a href="/achievement/">Достижения</a></li>
+                <li><a href="/donate/">Пожертвование</a></li>
+            </ul>
+        </li>
+        <li class="nav-menu__item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">groups</i>Общение</a>
+            <ul class="menu-item__dropdown drop-menu">
+                <li class="drop-menu__item"><a href="/?http://forum.marshrutka.com.ua/" target="_blank">Форум</a></li>
+                <li class="drop-menu__item"><a href="/?http://faq.marshrutka.com.ua" target="_blank">Вопросы и ответы</a></li>
+                <li class="drop-menu__item"><a href="/?http://chat.marshrutka.com.ua" target="_blank">Мини чат</a></li>
+            </ul>
+        </li>
+        <li class="nav-menu__item">
+            <a class="menu-item__wrap" href="#"><i class="material-icons">business_center</i>Партнеры</a>
+            <ul class="menu-item__dropdown drop-menu">
+                <li><a href="/story/yellow/">Истории о транспорте</a></li>
+                <li><a href="/?http://auto.marshrutka.com.ua" target="_blank">Автобазар</a></li>
+                <li><a href="/?http://dom.marshrutka.com.ua" target="_blank">Недвижимость</a></li>
+            </ul>
+        </li>
+    </ul>
+</div> -->

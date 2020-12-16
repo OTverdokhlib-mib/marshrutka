@@ -1,0 +1,280 @@
+.header {
+    &__search-panel {
+        display: flex;
+        align-items: center;
+        background-color: #832800;
+        color: #fff;
+        min-height: 40px;
+
+        a {
+            display: block;
+            line-height: 1;
+        }
+
+        .search-panel__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            * + * { margin-left: 10px; }
+        }
+
+        .input-field {
+            border: none;
+            border-radius: 2px;
+            color: #551a00;
+            min-width: 300px;
+            min-height: 26px;
+            padding-bottom: 2px;
+            text-indent: 4px;
+        }
+
+        .btn-search {
+            background: none;
+            background-color: #ffecc0;
+            border: solid 1px #fff;
+            border-radius: 2px;
+            color: #551a00;
+            min-height: 26px;
+            padding: 0 10px 1px;
+            cursor: pointer;
+
+            &:hover { opacity: 0.7; }
+        }
+
+        .btn-icon {
+            color: #ffecc0;
+            font-size: 26px;
+            cursor: pointer;
+
+            &:hover { opacity: 0.7; }
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        background-color: #ddcca6;
+        color: #832800;
+        min-height: 70px;
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        color: #424242;
+        min-height: 140px;
+        
+        h2 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        img { margin-right: 80px; }
+
+        &_decor {
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        }
+
+        &-wrap {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-top: solid 1px #fff;
+            border-bottom: solid 1px #fff;
+            max-height: 180px;
+        }
+    }
+
+    &__advertising {
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: #832800;
+        min-height: 100px;
+        padding-bottom: 20px;
+
+        &-decor {
+            opacity: 0.7;
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ddcca6+0,ddcca6+90,ddcca6+100&1+90,1+90,0+100 */
+            background: -moz-linear-gradient(top,  rgba(221,204,166,1) 0%, rgba(221,204,166,1) 80%, rgba(221,204,166,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(221,204,166,1) 0%,rgba(221,204,166,1) 80%,rgba(221,204,166,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(221,204,166,1) 0%,rgba(221,204,166,1) 80%,rgba(221,204,166,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+            & > * {
+                width: 140px;
+                font-size: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                & + * { margin-right: 15px; }
+
+                a { color: #0000cc; }
+                .host { color: #006600; }
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    padding-bottom: 5px;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &-home {
+            &-link {
+                display: flex;
+                align-items: center;
+                border: solid 1px transparent;
+                color: #832800;
+                padding: 0 8px;
+                line-height: 2;
+    
+                &:hover {
+                    background-color: #ffecc0;
+                    border: solid 1px #fff;
+                    border-radius: 3px;
+                    color: #832800;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-item {
+            position: relative;
+
+            &-link {
+                display: flex;
+                align-items: center;
+                border: solid 1px transparent;
+                color: #832800;
+                padding: 0 16px 1px 8px;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 2;
+                cursor: pointer;
+
+                .material-icons { margin: 1px 6px 0 0; }
+
+                &:hover {
+                    background-color: #ffecc0;
+                    border: solid 1px #fff;
+                    border-radius: 3px;
+                    color: #832800;
+                    text-decoration: none;
+                }
+            }
+
+            &:hover {
+
+                > a {
+                    background-color: #ffecc0;
+                    border: solid 1px #fff;
+                    border-radius: 3px;
+                    color: #832800;
+                    text-decoration: none;
+                }
+
+                .nav__dmenu {
+                    display: block;
+                }
+            }
+        }
+
+        &-separate {
+            border-left: solid 1px #832800;
+            height: 100%;
+            margin: 0 2px;
+        }
+    }
+
+    &__dmenu {
+        position: absolute;
+        display: none;
+        z-index: 2;
+        background-color: #ffecc0;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+        margin-top: -1px;
+        padding: 10px 12px;
+
+        &-item-link {
+            color: #832800;
+            font-size: 15px;
+            white-space: nowrap;
+            line-height: 2;
+
+            &:hover { color: #832800; }
+        }
+    }
+}
+
+.select-wrap {
+    position: relative;
+    display: inline-block;
+
+    select {
+        background: none;
+        background-color: #fff;
+        -webkit-appearance: none;
+        border-radius: 3px;
+        border: none;
+        color: #551a00;
+        min-height: 26px;
+        min-width: 150px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    &:hover::before {
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        display: inline-block;
+        background-color: #ddcca6;
+        border-left: 1px solid #832800;
+        border-radius: 0 2px 2px 0;
+        top: 0;
+        width: 28px;
+        height: 100%;
+        right: 0;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        border-top: 5px dashed #551a00;
+        border-right: 5px solid transparent;
+        border-bottom: 0;
+        border-left: 5px solid transparent;
+        top: 44%;
+        right: 8px;
+        cursor: pointer;
+    }
+}
